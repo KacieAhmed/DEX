@@ -1,148 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Verse</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="HTML5 website template">
-  <meta name="keywords" content="global, template, html, sass, jquery">
-  <meta name="author" content="Bucky Maler">
-  <link rel="stylesheet" href="assets/css/main.css">
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>iMining DEX</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
 
 
-<body>
 
-<!-- notification for small viewports and landscape oriented smartphones -->
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Verse</p>
-  </a>
-  <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
-</div>
-
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.png" alt="Global">
-            <p>Blockhack</p>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+       <header class="header">
+          <a class="header--logo">
+            <img src="assets/img/bh-logo.png" alt="Global">
+            <p>iMining Layer-2 Solution</p>
           </a>
-          <button class="header--cta cta">Request Verse</button>
+          
           <div class="header--nav-toggle">
             <span></span>
           </div>
         </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>Home</span></li>
-            <li><span>DEX</span></li>
-            
-            
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
 
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>D<br>E<br>X</h1>
-                <button class="enableEthereumButton" >Layer 2 Solution</button>
-                <img src="assets/img/work-metiew-smith.jpg" style="border-radius: 50%;" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>iMining</h3>
-                  <p></p>
-                </a>
-                <a href="#0">
-                  <h3>Layer 2</h3>
-                  <p></p>
-                </a>
-                <a href="#0">
-                  <h3>Solution</h3>
-                  <p></p>
-                </a>
-              </div>
-            </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Verse Coin</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                         <img src="assets/img/work-metiew-smith.jpg" style="border-radius: 50%;" alt="Welcome">
-                      </div>
-                      <p class="slider--item-title">Real Value</p>
-                      <p class="slider--item-description">Verse can be bought and sold for USD.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
-                      </div>
-                      <p class="slider--item-title">There are only 100,000 Verse 
-                      coins in existence.</p>
-                      <p class="slider--item-description">They are powerful. And they are your ticket to enter our Metaverse.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <div class="slider--item-image">
-                        <img src="assets/img/work-metiew-smith.jpg" style="border-radius: 50%;" alt="Welcome">
-                      </div>
-                      <p class="slider--item-title">Social Value</p>
-                      <p class="slider--item-description">This isn't a meme coin. Verse coins are used to interact with our developer live shows, and give you access to the developer eco-system we've developed. </p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <!-- <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a> -->
+                </li>
+            </ul>
+            <button id="login_button" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Sign in with Metamask</button>
+        </div>
+      </nav>
+    <div class="container">
+      
+            <div class="col col-md-6 offset-md-3" id="window">
+                <!-- <h4>iMining DEX</h4> -->
+                <img src="assets/img/iMiningE3.ico" alt="Global">
+                <div id="form">
+                    <div class="swapbox">
+                        <div class="swapbox_select token_select" id="from_token_select" >
+                           <!--  <p> Select Token </p> -->
+
+                            <img class="token_image" id="from_token_img" >
+                            <span id="from_token_text" ></span>
+                        </div>
+                        <div class="swapbox_select">
+                            <input class="number form-control" placeholder="amount" id="from_amount">
+                        </div>
+                    </div>
+                    <div class="swapbox">
+                        <div class="swapbox_select token_select"  id="to_token_select">
+                            <img class="token_image" id="to_token_img">
+                            <span id="to_token_text"></span>
+                        </div>
+                        <div class="swapbox_select">
+                            <input class="number form-control" placeholder="amount" id="to_amount">
+                        </div>
+                    </div>
+                    <div>Estimated Gas: <span id="gas_estimate"></span></div>
+                    <button disabled class="btn btn-large btn-primary btn-block" id="swap_button">
+                        Swap
+                    </button>
                 </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
             </div>
-          </li>
-          <li class="l-section section">
-          
-          
+        </div>
+    </div>
+    <div class="modal" id="token_modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Select token</h5>
+              <button id="modal_close" type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div id="token_list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-  <script charset="utf-8"
-        src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
-        type="text/javascript">
- </script>
-<script src="assets/js/functions-min.js"></script>
-
-<script type="text/javascript">
-  const ethereumButton = document.querySelector('.enableEthereumButton');
-
-ethereumButton.addEventListener('click', () => {
-  //Will Start the metamask extension
-  ethereum.request({ method: 'eth_requestAccounts' });
-});</script>
-
-</body>
+    <script type="text/javascript" src="./main.js"></script>
+  </body>
 </html>
